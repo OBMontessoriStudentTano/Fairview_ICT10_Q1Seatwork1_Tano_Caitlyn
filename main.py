@@ -1,12 +1,11 @@
 from pyscript import display, document
-# importing document and display package
 
 My_name = "Caitlyn Anne R. Tano"
 My_age = 15
 My_height = 165.1
 Three_countries_I_visited = ['Singapore', 'Japan', 'Hong Kong']
 Student_Type = False
-Favorite_things = {'Color: Pink', 'Car_brand: Honda', 'Shoe_size: 8 feet' , 'Best Friends: My friends from my friend group'}
+Favorite_things = {'Color: Pink', 'Car brand: Honda', 'Shoe size: 8 feet' , 'Best Friends: My friends from my friend group'}
 My_favorite_fruits = set[('Banana','Mango','Strawberry','Apple', 'Grape')]
 Seven_days_of_the_week = ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')
 
@@ -23,9 +22,15 @@ display(Seven_days_of_the_week, target="weeks")
     document.getElementById("Answer").innerHTML = "" # clear previous output
 
     try:
-     Number1 = float(document.getElementById("text1").value)
-     Number2 = float(document.getElementById("text2").value)
+     text1 = float(document.getElementById("text1").value)
+     text2 = float(document.getElementById("text2").value)
      Operating = document.getElementById("Operating").value
+
+     if text1 == "" or text2 == "":
+      display("Please fill the box/es", target="Answer")
+
+      Number1 = float (text1)
+      Number2 = float (text2)
     
     if Operating == "Addition":
        result = Number1 + Number2
@@ -40,8 +45,10 @@ display(Seven_days_of_the_week, target="weeks")
        result = Number1 / Number2
        symbol = "/"
 
-    except ValueError:
-        display("Please enter valid numbers in both boxes", target="Answer")
+   answer_text = str(Number1) + " " + symbol + " " + str(Number2) + " = " + str(result)
+   display(answer_text, target="Answer")
+
+
 
 
     
