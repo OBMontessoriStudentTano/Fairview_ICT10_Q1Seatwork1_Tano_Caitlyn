@@ -9,7 +9,7 @@ Favorite_things = {'Color: Pink', 'Car brand: Honda', 'Shoe size: 8 feet' , 'Bes
 My_favorite_fruits = set[('Banana','Mango','Strawberry','Apple', 'Grape')]
 Seven_days_of_the_week = ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')
 
-
+# Display identification information
 display(My_name, target="name")
 display(My_age, target="age")
 display(My_height, target="height")
@@ -18,16 +18,18 @@ display(Student_Type, target="student")
 display(Favorite_things, target="favorite")
 display(Seven_days_of_the_week, target="weeks")
 
+# Calculator
  def solving():
+
     document.getElementById("Answer").innerHTML = "" # clear previous output
 
-    try:
      text1 = float(document.getElementById("text1").value)
      text2 = float(document.getElementById("text2").value)
      Operating = document.getElementById("Operating").value
 
      if text1 == "" or text2 == "":
       display("Please fill the box/es", target="Answer")
+      return
 
       Number1 = float (text1)
       Number2 = float (text2)
@@ -35,18 +37,29 @@ display(Seven_days_of_the_week, target="weeks")
     if Operating == "Addition":
        result = Number1 + Number2
        symbol = "+"
+
     elif Operating == "Subtraction":
        result = Number1 + Number2
        symbol = "-"
+
     elif Operating == "Multiplication":
        result = Number1 * Number2
        symbol = "*"
-    elif Operating == "Division":
-       result = Number1 / Number2
-       symbol = "/"
 
-   answer_text = str(Number1) + " " + symbol + " " + str(Number2) + " = " + str(result)
+    elif Operating == "Division":
+       if Number2 == 0:
+         display("You can't divide by zero", target="Answer")
+       return
+
+       result = Number1 / Number2
+       symbol = "/" 
+
+    answer_text = (str(Number1) + " " + symbol + " " + str(Number2) + " = " + str(result))
+
    display(answer_text, target="Answer")
+
+   except ValueError:
+      display("Please enter valid numbers", target="Answer")
 
 
 

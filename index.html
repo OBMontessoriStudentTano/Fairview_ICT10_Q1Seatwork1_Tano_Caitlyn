@@ -18,11 +18,13 @@
     <div id="student">I'm a new student:</div>
     <div id="favorite">My favorite types of things:</div>
     <div id="weeks">Here are the seven days of the week are</div>
+    <script type="py" src="main.py"></script>
 
     <br>
 
     <input type="text" id="text1" placeholder="Enter the number here">
     <br><br>
+
     <input type="text" id="text2" placeholder="Enter the number here">
     <br><br>
 
@@ -32,13 +34,15 @@
         <option value="Multiplication">Multiply</option>
         <option value="Division">Divide</option>
     </select>
+
     <br><br>
 
-    <button type="submit" py-click="solving">Solve</button>
+    <button type="button" py-click="solving">Solve</button>
     <div id="Solve"></div>
     <br>
     <div id="Answer"></div>
     
+    <!-- Only load main.py ONCE-->
     <script type="py" src="main.py"></script>
     
 </body>
