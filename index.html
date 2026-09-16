@@ -11,39 +11,35 @@
 </head>
 <body>
 
-    <div id="name">My name is</div>
-    <div id="age">My age is</div>
-    <div id="height">My height (in cm) is</div>
-    <div id="countries">Three countries I already visited are</div>
-    <div id="student">I'm a new student:</div>
-    <div id="favorite">My favorite types of things:</div>
-    <div id="weeks">Here are the seven days of the week are</div>
-    <script type="py" src="main.py"></script>
-
+    <div>My name is <span id="name"></span></div>
+    <div>My age is <span id="age"></span></div>
+    <div>My height (in cm) is <span id="height"></span></div>
+    <div>Three countries I already visited are <span id="countries"></span></div>
+    <div>I'm a new student: <span id="student"></span></div>
+    <div>My favorite types of things: <span id="favorite"></span></div>
+    <div>My favorite fruits are: <span id="fruits"></span></div>
+    <div>Here are the seven days of the week: <span id="weeks"></span></div>
     <br>
-
-    <input type="text" id="text1" placeholder="Enter the number here">
+    <input type="text" id="text1" placeholder="Enter a number here">
     <br><br>
-
-    <input type="text" id="text2" placeholder="Enter the number here">
+    <input type="text" id="text2" placeholder="Enter a number here">
     <br><br>
 
     <select id="Operating">
         <option value="Addition">Add</option>
-        <option value="Subtraction">Minus</option>
+        <option value="Subtraction">Subtract</option>
         <option value="Multiplication">Multiply</option>
-        <option value="Division">Divide</option>
+        <option value="Division">Division</option>
     </select>
 
     <br><br>
 
     <button type="button" py-click="solving">Solve</button>
-    <div id="Solve"></div>
     <br>
     <div id="Answer"></div>
-    
-    <!-- Only load main.py ONCE-->
+
     <script type="py" src="main.py"></script>
-    
+
 </body>
-</html>
+</html>    
+
