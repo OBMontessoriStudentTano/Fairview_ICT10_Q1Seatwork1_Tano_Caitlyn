@@ -9,7 +9,6 @@ Favorite_things = {'Color: Pink', 'Car brand: Honda', 'Shoe size: 8 feet' , 'Bes
 My_favorite_fruits = set[('Banana','Mango','Strawberry','Apple', 'Grape')]
 Seven_days_of_the_week = ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')
 
-
 display(My_name, target="name")
 display(My_age, target="age")
 display(My_height, target="height")
@@ -17,7 +16,6 @@ display(Three_countries_I_visited, target="countries")
 display(Student_Type, target="student")
 display(Favorite_things, target="favorite")
 display(Seven_days_of_the_week, target="weeks")
-
 
  def solving():
 
