@@ -19,7 +19,7 @@ display(Seven_days_of_the_week, target="weeks")
 
  def solving():
 
-    document.getElementById("Answer").innerHTML = "" # clear previous output
+    document.getElementById("Answer").innerHTML = "" 
 
      text1 = float(document.getElementById("text1").value)
      text2 = float(document.getElementById("text2").value)
