@@ -8,9 +8,54 @@
     href="https://pyscript.net/releases/2026.7.3/core.css" />
     <script type="module" 
     src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <style>
+        body {
+            font-family:'Courier New', Courier, monospace;
+            background: #fac3dd;
+            margin: 0;
+            padding: 30px;
+            color: black
+        }
+
+        .card {   
+            background: white;
+            padding: 20px;
+            border-radius: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .h2 {
+            color:#f7056f
+        }
+
+        .info {
+            margin: 12px 0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+
+    </style>
 </head>
 <body>
-
+     
+    <div class="card">
+    <div class="h2">
+    <h2>About me</h2>
+    </div>
+    <div class="info">
     <div>My name is <span id="name"></span></div>
     <div>My age is <span id="age"></span></div>
     <div>My height (in cm) is <span id="height"></span></div>
@@ -19,7 +64,12 @@
     <div>My favorite types of things: <span id="favorite"></span></div>
     <div>My favorite fruits are: <span id="fruits"></span></div>
     <div>Here are the seven days of the week: <span id="weeks"></span></div>
+    </div>
+    
     <br>
+    <div class="h2">
+    <h2>Calculator</h2>
+    </div>
     <input type="text" id="text1" placeholder="Enter a number here">
     <br><br>
     <input type="text" id="text2" placeholder="Enter a number here">
@@ -37,6 +87,7 @@
     <button type="button" py-click="solving">Solve</button>
     <br>
     <div id="Answer"></div>
+    </div>
 
     <script type="py" src="main.py"></script>
 
