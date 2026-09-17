@@ -50,6 +50,8 @@ def solving(event):
       symbol = "*" 
 
    if Operating == "Division":
+      if Number2 == 0:
+         display ("Cannot divide by zero", target="Answer")
       result = Number1 / Number2
       symbol = "/"        
 
